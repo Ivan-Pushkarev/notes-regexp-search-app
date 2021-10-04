@@ -19,12 +19,13 @@
 form {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 form .input-group {
   display: flex;
+  flex-direction: column;
   justify-content: left;
-  align-items: center;
+  align-items: start;
 }
 form .input-group .input-wrapper {
   padding: 0 20px 0 20px;
@@ -39,6 +40,10 @@ form .input-group .input-wrapper label {
 form .input-group .input-wrapper input {
   width: 10vw;
   height: 30px;
+  font-size: 1.5rem;
+}
+form .input-group .input-wrapper textarea {
+  width: 30vw;
   font-size: 1.5rem;
 }
 form .input-group .input-wrapper button {

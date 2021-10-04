@@ -18,11 +18,12 @@
 form {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: start;
 	.input-group{
 		display: flex;
+		flex-direction: column;
 		justify-content: left;
-		align-items: center;
+		align-items: start;
 		.input-wrapper{
 			padding: 0 20px 0 20px;
 			label{
@@ -35,6 +36,10 @@ form {
 			input {
 				width: 10vw;
 				height: 30px;
+				font-size: 1.5rem;
+			}
+			textarea{
+				width: 30vw;
 				font-size: 1.5rem;
 			}
 			button{

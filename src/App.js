@@ -60,14 +60,14 @@ function App() {
                         <label htmlFor="title">Enter note title</label>
                         <input type="text" id='title' name='title'
                                value={newTitle} onChange={(e) => setNewTitle(e.target.value)}/>
-                    </div>
-                    <div className="input-wrapper">
-                        <label htmlFor="body">Enter note body</label>
-                        <input type="text" id='body' name='body'
-                               value={newBody} onChange={(e) => setNewBody(e.target.value)}/>
                         <button onClick={() => actionController('ADD', {title: newTitle, body: newBody})}>
                             Add Note
                         </button>
+                    </div>
+                    <div className="input-wrapper">
+                        <label htmlFor="body">Enter note body</label>
+                        <textarea type="text" id='body' name='body' rows="1"
+                               value={newBody} onChange={(e) => setNewBody(e.target.value)}/>
                     </div>
                 </div>
                 <div className="input-group">
