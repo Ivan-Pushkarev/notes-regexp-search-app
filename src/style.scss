@@ -1,0 +1,81 @@
+.App {
+	text-align: center;
+	box-sizing: border-box;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.App-header {
+	margin-top: 0;
+	background-color: white;
+	font-size: calc(10px + 2vmin);
+	color: black;
+	h1 {
+		margin-top: 0;
+		padding-top: 2rem;
+	}
+}
+form {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.input-group{
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		.input-wrapper{
+			padding: 0 20px 0 20px;
+			label{
+				display: block;
+				text-align: left;
+				font-size: 1.5rem;
+				font-weight: 700;
+				margin-bottom: 5px;
+			}
+			input {
+				width: 10vw;
+				height: 30px;
+				font-size: 1.5rem;
+			}
+			button{
+				margin-left: 20px;
+				padding: 8px;
+				font-size: 1.3rem;
+				cursor: pointer;
+				background-color: lightgray;
+			}
+		}
+	}
+}
+li {
+	text-align: left;
+	font-size: 1.5rem;
+	.note{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&__text-wrapper{
+			width: 85%;
+		}
+		button {
+			width: 70px;
+			height: 70px;
+			border: none;
+			background: none;
+			transition: 0.5s all;
+			&:hover{
+				transform: scale(1.2);
+				cursor: pointer;
+			}
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+.yellow {
+	background-color: gold;
+}
+p {
+	display: inline;
+}
