@@ -26,7 +26,6 @@ function App() {
     }, [])
     
     const regexp = new RegExp(`${searchValue}`, "i")
-    console.log(regexp)
     
     const searchFilter = (note) => {
         if (searchValue === '') return note
