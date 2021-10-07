@@ -66,7 +66,7 @@ function App() {
                     </div>
                     <div className="input-wrapper">
                         <label htmlFor="body">Enter note body</label>
-                        <textarea type="text" id='body' name='body' rows="1"
+                        <textarea  id='body' name='body' rows="1"
                                value={newBody} onChange={(e) => setNewBody(e.target.value)}/>
                     </div>
                 </div>
